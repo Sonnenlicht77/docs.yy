@@ -16,8 +16,10 @@ export default defineConfig({
       {
         text: 'Examples',
         items: [
+          { text: 'md使用', link: '/guide/vp/mdex' },
           { text: 'Markdown Examples', link: '/markdown-examples' },
           { text: 'Runtime API Examples', link: '/api-examples' }
+
         ]
       }
     ],

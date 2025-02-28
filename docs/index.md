@@ -13,6 +13,9 @@ hero:
     - theme: alt
       text: API Examples
       link: /api-examples
+    - theme: alt
+      text: vitepress使用
+      link: /guide/vp/mdex
 
 features:
   - title: Feature A
