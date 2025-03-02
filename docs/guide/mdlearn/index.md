@@ -9,6 +9,4 @@ lang: zh-CN
 
 # markdown写作
 
-## [vitepress中使用markdown使用](./01.vpmd.md)
-
-## [markdown中frontmatter使用](./02.fm.md.md)
+vitepress中，markdown写作
