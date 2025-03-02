@@ -1,1 +1,0 @@
-import{_ as e,c as t,o}from"./chunks/framework.DIX4zuvk.js";const p=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"guide/others/01.demo.md","filePath":"guide/others/01.demo.md"}'),r={name:"guide/others/01.demo.md"};function a(s,d,c,n,i,m){return o(),t("div")}const f=e(r,[["render",a]]);export{p as __pageData,f as default};

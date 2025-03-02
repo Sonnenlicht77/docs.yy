@@ -14,8 +14,8 @@ hero:
       text: API Examples
       link: /api-examples
     - theme: alt
-      text: vitepress使用
-      link: /guide/vp
+      text: markdown使用
+      link: /guide/mdlearn
 
 features:
   - title: Feature A
