@@ -13,6 +13,7 @@ export default defineConfig({
   ],
   markdown: {
     // lineNumbers: true
+
   },
   themeConfig: {
     logo: '/logo.svg',
@@ -67,6 +68,9 @@ export default defineConfig({
             { text: 'markdown使用', link: '/guide/mdlearn' },
             { text: 'vitepress中md使用', link: '/guide/mdlearn/01.vpmd' },
             { text: 'md中frontmatter使用', link: '/guide/mdlearn/02.fm' },
+            { text: '站点配置', link: '/guide/mdlearn/03.siteconfig' },
+            { text: '使用vue', link: '/guide/mdlearn/04.usevue' }
+
           ]
         },
         {
@@ -109,6 +113,12 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Sonnenlicht77/docs.yy' }
-    ]
+    ],
+
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2023-present Sonnenlicht77'
+    }
+
   }
 })
