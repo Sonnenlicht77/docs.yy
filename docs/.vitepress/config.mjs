@@ -6,15 +6,22 @@ import { defineConfig } from 'vitepress'
 // #e89abe
 export default defineConfig({
   base: '/docs.yy/',
-  title: "My Awesome Project",
+  title: "💗 知识库 🫳",
+  titleTemplate: ':title - 个人知识整理',
   description: "A VitePress Site",
   head: [
-    ['link', { rel: 'icon', href: 'favicon.ico' }]
+    ['link', { rel: 'icon', href: '/docs.yy/favicon.ico' }],
+    ['link', { rel: 'stylesheet', href: '/docs.yy/style.css' }],
+    ['script', {}, `
+      console.log("test");  
+    `]
   ],
   markdown: {
     // lineNumbers: true
 
   },
+  lastUpdated: true,
+
   themeConfig: {
     logo: '/logo.svg',
     // https://vitepress.dev/reference/default-theme-config
@@ -118,7 +125,9 @@ export default defineConfig({
     footer: {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2023-present Sonnenlicht77'
-    }
-
+    },
+    lastUpdatedText: '最后更新时间',
+    editLink: true,
+    editLinkText: '在 GitHub 上编辑此页',
   }
 })
