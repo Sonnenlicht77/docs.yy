@@ -11,7 +11,7 @@ export default defineConfig({
   description: "A VitePress Site",
   head: [
     ['link', { rel: 'icon', href: '/docs.yy/favicon.ico' }],
-    ['link', { rel: 'stylesheet', href: '/docs.yy/style.css' }],
+    // ['link', { rel: 'stylesheet', href: '/docs.yy/style.css' }],
     ['script', {}, `
       console.log("test");  
     `]
