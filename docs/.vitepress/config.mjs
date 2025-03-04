@@ -76,7 +76,8 @@ export default defineConfig({
             { text: 'vitepress中md使用', link: '/guide/mdlearn/01.vpmd' },
             { text: 'md中frontmatter使用', link: '/guide/mdlearn/02.fm' },
             { text: '站点配置', link: '/guide/mdlearn/03.siteconfig' },
-            { text: '使用vue', link: '/guide/mdlearn/04.usevue' }
+            { text: '使用vue', link: '/guide/mdlearn/04.usevue' },
+            { text: '路由', link: '/guide/mdlearn/05.routerInVP' }
 
           ]
         },
