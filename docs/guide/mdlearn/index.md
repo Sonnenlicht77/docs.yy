@@ -8,6 +8,8 @@ lang: zh-CN
 footer: 
   message: 在github上编辑此页
   copyright: Copyright © 2022-present
+
+next: true
 ---
 
 

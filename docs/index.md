@@ -3,18 +3,14 @@
 layout: home
 
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "💖 前端知识库  "
+  tagline: "✊ 坚持学习，坚持分享"
   actions:
-    - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: ❤️‍🔥 前端知识 
+      link: /guide/front
     - theme: alt
-      text: markdown使用
+      text: 使用vitepress 
       link: /guide/mdlearn
 
 features:
@@ -24,5 +20,9 @@ features:
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+
+
+footer: false
 ---
+
 
