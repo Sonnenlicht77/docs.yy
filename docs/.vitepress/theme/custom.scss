@@ -1,0 +1,63 @@
+@use 'sass:color'; // 必须放在文件最顶部
+
+@import './docs.yy.css';
+
+// 主色板定义（使用color.adjust替代lighten/darken）
+$primary: #e89abe;
+$primary-light: color.adjust($primary, $lightness: 12%); // #f5c3d8
+$primary-lighter: color.adjust($primary, $lightness: 24%); // #fcecf3
+$primary-dark: color.adjust($primary, $lightness: -15%); // 原darken改为负值 // #c56b95
+$primary-darker: color.adjust($primary, $lightness: -25%); // #9d3a6a
+
+// 辅助色
+$secondary: #ec46a4;
+$secondary-light: color.adjust($secondary, $lightness: 12%); // #fcecf3
+$secondary-lighter: color.adjust($secondary, $lightness: 24%); // #ffffff
+
+// 中性色 (亮色模式)
+$vp-c-white: #ffffff;
+$vp-c-black: #1a1a1a;
+$vp-c-gray: color.mix($vp-c-black, $vp-c-white, 40%); // mix函数仍可用
+
+// 中性色 (暗黑模式)
+$dm-background: #1d1d20;
+$dm-text: rgba(255, 255, 245, 0.86);
+
+// 应用变量
+:root {
+  // 主色
+  --vp-c-brand: #{$primary};
+  --vp-c-brand-light: #{$primary-light};
+  --vp-c-brand-lighter: #{$primary-lighter};
+  --vp-c-brand-dark: #{$primary-dark};
+  --vp-c-brand-darker: #{$primary-darker};
+
+  --vp-home-hero-name-color: #{$secondary};
+
+  // 文字
+  --vp-c-text-1: #{rgba($vp-c-black, 0.92)};
+  --vp-c-text-2: #{rgba($vp-c-black, 0.72)};
+
+  // 背景（暗色函数替换）
+  --vp-c-bg: #{$vp-c-white};
+  --vp-c-bg-alt: #{color.adjust($vp-c-white, $lightness: -3%)}; // 原darken改为负值
+
+  // 代码块
+  --vp-code-block-bg: #{rgba($primary, 0.05)};
+}
+
+// 暗黑模式覆盖（嵌套调用需要逐层修改）
+.dark {
+  --vp-c-brand: #{color.adjust($primary, $lightness: 8%)};
+  --vp-c-brand-light: #{color.adjust($primary, $lightness: 16%)};
+  --vp-c-brand-dark: #{color.adjust($primary, $lightness: -8%)};
+
+  --vp-c-text-1: #{$dm-text};
+  --vp-c-text-2: #{rgba($dm-text, 0.75)};
+
+  --vp-c-bg: #{$dm-background};
+  --vp-c-bg-alt: #{color.adjust($dm-background, $lightness: 5%)};
+
+  // 嵌套函数需要拆解修改
+  --vp-code-block-bg: #{rgba(color.adjust($primary, $lightness: 15%), 0.15)};
+}

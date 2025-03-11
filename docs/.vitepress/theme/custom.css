@@ -1,0 +1,25 @@
+@import './docs.yy.css';
+:root {
+  --vp-c-brand: #e89abe;
+  --vp-c-brand-light: #f3ccde;
+  --vp-c-brand-lighter: #fffefe;
+  --vp-c-brand-dark: #da5c96;
+  --vp-c-brand-darker: #d0327b;
+  --vp-home-hero-name-color: #ec46a4;
+  --vp-c-text-1: rgba(26, 26, 26, 0.92);
+  --vp-c-text-2: rgba(26, 26, 26, 0.72);
+  --vp-c-bg: #ffffff;
+  --vp-c-bg-alt: #f7f7f7;
+  --vp-code-block-bg: rgba(232, 154, 190, 0.05);
+}
+
+.dark {
+  --vp-c-brand: #f0bbd3;
+  --vp-c-brand-light: #f7dce9;
+  --vp-c-brand-dark: #e079a9;
+  --vp-c-text-1: rgba(255, 255, 245, 0.86);
+  --vp-c-text-2: rgba(255, 255, 245, 0.75);
+  --vp-c-bg: #1d1d20;
+  --vp-c-bg-alt: #29292d;
+  --vp-code-block-bg: rgba(246, 216, 230, 0.15);
+}

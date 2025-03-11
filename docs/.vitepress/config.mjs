@@ -6,7 +6,7 @@ import { defineConfig } from 'vitepress'
 // #e89abe
 export default defineConfig({
   base: '/docs.yy/',
-  title: "知识库 🫳🏻",
+  title: "知识库 🫳🏻 ",
   titleTemplate: ':title - 个人知识整理',
   description: "A VitePress Site",
   head: [
@@ -75,8 +75,20 @@ export default defineConfig({
             { text: 'md中frontmatter使用', link: '/guide/mdlearn/02.fm' },
             { text: '站点配置', link: '/guide/mdlearn/03.siteconfig' },
             { text: '使用vue', link: '/guide/mdlearn/04.usevue' },
-            { text: '路由', link: '/guide/mdlearn/05.routerInVP' }
-
+            { text: '路由', link: '/guide/mdlearn/05.routerInVP' },
+            {
+              text: 'vitepress案例',
+              items: [
+                {
+                  text: '搭建个人简历',
+                  link: '/guide/mdlearn/vpdemo/01.resumeDoc'
+                },
+                {
+                  text: '开发简历',
+                  link: '/guide/mdlearn/vpdemo/02.demoKaiFa'
+                }
+              ]
+            }
           ]
         }
       ],
@@ -97,10 +109,28 @@ export default defineConfig({
               text: 'JavaScript知识',
               items: [
                 {
+                  text: '基础知识',
+                  items: [
+                    {
+                      text: 'this相关',
+                      link: '/guide/front/jsk/base/01.thislearn'
+                    },
+                    {
+                      text: '函数作用域',
+                      link: '/guide/front/jsk/base/02.funcScope'
+                    },
+                  ]
+
+                },
+                {
                   text: '设计模式',
                   link: '/guide/front/jsk/modeldesign/'
                 }
               ]
+            },
+            {
+              text: '数据结构与算法',
+              link: '/guide/front/algorithm'
             }
           ]
         }
@@ -130,13 +160,6 @@ export default defineConfig({
       copyright: 'Copyright © 2023-present Sonnenlicht77'
     },
 
-    lastUpdated: {
-      text: '最后更新时间',
-      formatOptions: {
-        dateStyle: 'short',
-        timeStyle: 'medium'
-      }
-    },
     editLink: {
       pattern: 'https://github.com/Sonnenlicht77/docs.yy/tree/main/docs/:path',
       text: '编辑此页',
@@ -156,7 +179,20 @@ export default defineConfig({
       next: '下一页'
     },
     // 外部链接
-    externalLinkIcon: true
+    externalLinkIcon: true,
 
-  }
+
+  },
+  vite: {
+  },
+
+  lastUpdated: {
+    text: '最后更新时间',
+    formatOptions: {
+      dateStyle: 'short',
+      timeStyle: 'medium'
+    }
+  },
+  appearance: false
+
 })
