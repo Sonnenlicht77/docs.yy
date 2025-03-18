@@ -1,18 +1,17 @@
 /*
  * @Author: yangyang993 sonnenlicht@foxmail.com
  */
+
 import { defineConfig } from 'vitepress'
 import nav from './config/nav'
 import sidebarConfig from './config/siderbar'
-import { fileURLToPath } from 'url'
-
 // 自动生成侧边栏
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: '💖 个人知识库',
   description: '坚持记录',
-  base: '/docs/',
+  base: '/docs.yy/',
   appearance: false,
   head: [
     [
