@@ -1,0 +1,134 @@
+/**
+ * 粉色主题配色方案
+ */
+
+/**
+ * 基础颜色变量
+ * -------------------------------------------------------------------------- */
+:root {
+  /* 品牌色系 */
+  --vp-c-brand-1: #FF69B4;
+  /* 主品牌色-亮粉 */
+  --vp-c-brand-2: #FF1493;
+  /* 悬停状态 */
+  --vp-c-brand-3: #DB7093;
+  /* 按下状态 */
+  --vp-c-brand-soft: rgba(255, 182, 193, 0.14);
+  /* 柔和背景 */
+
+  /* 默认色系（灰阶调整） */
+  --vp-c-default-1: #8B5F6D;
+  /* 默认文本色 */
+  --vp-c-default-2: #CD919E;
+  /* 次要文本 */
+  --vp-c-default-3: #FFE4E1;
+  /* 背景色 */
+  --vp-c-default-soft: rgba(219, 112, 147, 0.1);
+
+  /* 提示色系 */
+  --vp-c-tip-1: #FF69B4;
+  --vp-c-tip-2: #FFB6C1;
+  --vp-c-tip-3: #FFF0F5;
+  --vp-c-tip-soft: rgba(255, 182, 193, 0.2);
+
+  /* 警告色系 */
+  --vp-c-warning-1: #FFA07A;
+  /* 珊瑚色 */
+  --vp-c-warning-2: #FF7F50;
+  --vp-c-warning-3: #FF6347;
+  --vp-c-warning-soft: rgba(255, 160, 122, 0.15);
+
+  /* 危险色系 */
+  --vp-c-danger-1: #DC143C;
+  /* 深红色 */
+  --vp-c-danger-2: #FF0033;
+  --vp-c-danger-3: #B22222;
+  --vp-c-danger-soft: rgba(220, 20, 60, 0.12);
+}
+
+/**
+ * 组件配色
+ * -------------------------------------------------------------------------- */
+
+/* 按钮组件 */
+:root {
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: #FFFFFF;
+  --vp-button-brand-bg: linear-gradient(135deg,
+      var(--vp-c-brand-1) 0%,
+      var(--vp-c-brand-3) 100%);
+  --vp-button-brand-hover-bg: linear-gradient(135deg,
+      var(--vp-c-brand-2) 0%,
+      var(--vp-c-brand-1) 100%);
+  --vp-button-brand-active-bg: var(--vp-c-brand-3);
+}
+
+/* 主页英雄区 */
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(120deg,
+      #FF69B4 30%,
+      #FFB6C1 80%);
+
+  --vp-home-hero-image-background-image: linear-gradient(-45deg,
+      #FF69B4 50%,
+      #FFB6C1 50%);
+  --vp-home-hero-image-filter: blur(44px);
+}
+
+/* 自定义区块 */
+:root {
+  --vp-custom-block-tip-border: transparent;
+  --vp-custom-block-tip-text: var(--vp-c-text-1);
+  --vp-custom-block-tip-bg: var(--vp-c-tip-soft);
+
+  --vp-custom-block-warning-bg: var(--vp-c-warning-soft);
+  --vp-custom-block-danger-bg: var(--vp-c-danger-soft);
+}
+
+/* 暗色模式适配 */
+.dark {
+  --vp-c-brand-1: #FFB6C1;
+  /* 柔粉色 */
+  --vp-c-brand-2: #FF69B4;
+  --vp-c-brand-3: #DB7093;
+  --vp-c-brand-soft: rgba(255, 182, 193, 0.16);
+
+  --vp-c-text-1: #FFE4E1;
+  /* 浅粉色文本 */
+  --vp-c-text-2: #DB7093;
+  --vp-c-bg: #2A1A1F;
+  /* 深粉背景 */
+  --vp-c-bg-soft: #3D2B2F;
+
+  --vp-home-hero-name-background: linear-gradient(120deg,
+      #FFB6C1 30%,
+      #DB7093 80%);
+}
+
+/**
+ * 其他组件调整
+ * -------------------------------------------------------------------------- */
+
+/* Algolia搜索框 */
+.DocSearch {
+  --docsearch-primary-color: var(--vp-c-brand-1) !important;
+  --docsearch-searchbox-background: var(--vp-c-bg-soft);
+}
+
+/* 代码块 */
+:root {
+  --vp-code-block-bg: var(--vp-c-default-3);
+  --vp-code-line-highlight-color: var(--vp-c-brand-soft);
+}
+
+.dark {
+  --vp-code-block-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* 导航栏激活状态 */
+:root {
+  --vp-nav-height: 60px;
+  --vp-nav-bg-color: var(--vp-c-bg);
+  --vp-nav-item-active-bg: var(--vp-c-brand-soft);
+}
